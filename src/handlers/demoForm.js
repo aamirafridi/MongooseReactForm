@@ -42,17 +42,12 @@ export default {
         if (req.xhr) {
           return res.json(500, errors);
         }
-        console.log("====================================================================");
-        console.log(err);
-        console.log("====================================================================");
-        console.log(errors);
-        console.log("====================================================================");
         req.flash('formDataErrors', errors);
         return res.redirect('/demo');
       }
       // success
       if (req.xhr) {
-        return res.json(500, success);
+        return res.json(200, success);
       }
       req.flash('formDataSuccess', success.message);
       return res.redirect('/demo');
