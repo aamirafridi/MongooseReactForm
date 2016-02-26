@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+</head>
+<body style="background: #eee;">
+  <script type="text/javascript">document.body.className += " js ";</script>
+  <div class="container" role="main">
+    <div class="main">
+      <h1>(MongooseSchema) => ReactForm <small style="margin-top:12px;" class="pull-right">Demo</small></h1>
+      {{{body}}}
+    </div>
+  </div>
+  <script type="text/javascript" src="/assets/js/libs.js"></script>
+  {{#if assets}}
+    {{#if assets.js}}
+      {{#each assets.js}}<script type="text/javascript" src="{{this}}"></script>{{/each}}
+    {{/if}}
+    {{#if assets.css}}
+      {{#each assets.js}}<link rel="stylesheet" type="text/css" href="{{this}}"/>{{/each}}
+    {{/if}}
+  {{/if}}
+</body>
+</html>

@@ -1,0 +1,4 @@
+{
+  "presets": ["es2015-node5", "react"],
+  "plugins": ["syntax-class-properties", "transform-class-properties"],
+}

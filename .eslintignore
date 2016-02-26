@@ -1,0 +1,4 @@
+dist
+dest
+node_modules
+src/views/

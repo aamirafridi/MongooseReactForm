@@ -1,0 +1,15 @@
+{
+  "db": {
+    "local": {
+      "path": "mongodb://localhost/demoform"
+    }
+  },
+  "recaptcha": {
+    "siteKey": "6LcPZxYTAAAAAFvno0TEgT03UzlROOhZ6Y9j0TMS",
+    "secretKey": "6LcPZxYTAAAAAH4i9L_WyxnW6YPUienEusAOG3Hb",
+    "apiUrl": "https://www.google.com/recaptcha/api.js?onload=onCaptchaReady&render=explicit"
+  },
+  "location": {
+    "apiUrl": "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry"
+  }
+}

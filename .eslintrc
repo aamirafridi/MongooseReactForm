@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb/base",
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "id-length": 0,
+    "jsx-quotes": 0,
+    "react/prop-types": 0
+  },
+  "globals": {
+    "jQuery": false,
+    "$": false
+  }
+}

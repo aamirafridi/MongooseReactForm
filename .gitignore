@@ -1,0 +1,6 @@
+*.log
+coverage/
+dist/
+src/public/uploaded/
+node_modules
+.DS_Store
