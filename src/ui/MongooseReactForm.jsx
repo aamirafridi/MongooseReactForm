@@ -4,7 +4,7 @@ import cloneDeep from 'lodash/lang/cloneDeep';
 export class MongooseReactForm extends Component {
   static propTypes = {
     schema: PropTypes.object.isRequired,
-    // errors: PropTypes.object,
+    errors: PropTypes.object,
   };
 
   constructor(props, context) {

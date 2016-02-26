@@ -10,16 +10,16 @@ const demoSchema = new Schema({
     minlength: 10,
     validate: [validateEmail, 'Please provide a valid email'],
   },
-  termsAndConditions: {
-    type: Boolean,
-    required: 'You must agree to terms and conditions',
-  },
-  description: {
-    type: String,
-    maxlength: 1,
-    input: 'textarea',
-    label: 'Please enter in details:',
-  },
+  // termsAndConditions: {
+  //   type: Boolean,
+  //   required: 'You must agree to terms and conditions',
+  // },
+  // description: {
+  //   type: String,
+  //   maxlength: 1,
+  //   input: 'textarea',
+  //   label: 'Please enter in details:',
+  // },
   // minMax: {
   //   type: [Number],
   //   min: 18,
@@ -88,21 +88,21 @@ const demoSchema = new Schema({
   //     trim: true,
   //   },
   // },
-  city: {
-    type: String,
-    enum: ['peshawar', 'lahore', 'karachi'],
-  },
-  enumObj: {
-    type: [String],
-    enum: {
-      values: ['multi-1', 'multi-2', 'multi-3'],
-      message: 'enum validator failed for path {PATH} with value {VALUE}',
-    },
-  },
-  createdDate: {
-    input: false,
-    type: Date,
-  },
+  // city: {
+  //   type: String,
+  //   enum: ['peshawar', 'lahore', 'karachi'],
+  // },
+  // enumObj: {
+  //   type: [String],
+  //   enum: {
+  //     values: ['multi-1', 'multi-2', 'multi-3'],
+  //     message: 'enum validator failed for path {PATH} with value {VALUE}',
+  //   },
+  // },
+  // createdDate: {
+  //   input: false,
+  //   type: Date,
+  // },
   // matchSimple: {
   //   type: String,
   //   match: /^a/,
@@ -111,16 +111,16 @@ const demoSchema = new Schema({
   //   type: String,
   //   match: [ /\.html$/, "That file doesn't end in .html ({VALUE})"],
   // },
-  geo: {
-    type: {
-      type: String,
-      default: 'Point',
-    },
-    coordinates: {
-      type: [Number],
-      required: 'Invalid address provided. Please type and then select from the list',
-    },
-  },
+  // geo: {
+  //   type: {
+  //     type: String,
+  //     default: 'Point',
+  //   },
+  //   coordinates: {
+  //     type: [Number],
+  //     required: 'Invalid address provided. Please type and then select from the list',
+  //   },
+  // },
 });
 
 export default mongoose.model('DemoModal', demoSchema);
