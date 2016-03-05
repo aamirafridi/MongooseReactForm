@@ -30,3 +30,9 @@ npm run lint
 ```
 
 Open browser and hit http://127.0.0.1:3000/demo
+
+## TODOs
+ - Templates for each type of inputs
+ - Tests
+ - Serialize inputs (expose refs)
+ - Publish to npm
