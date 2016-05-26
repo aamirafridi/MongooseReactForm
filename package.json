@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://aamirafridi@bitbucket.org/cytechsolutions/venuebooker_web.git"
+    "url": "https://github.com/aamirafridi/MongooseReactForm/"
   },
   "eslintConfig": {
     "globals": {
