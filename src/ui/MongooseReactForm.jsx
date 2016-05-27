@@ -314,7 +314,8 @@ function humanizeCamelcase(str) {
 }
 
 
-
+// should be a separate file may be
+// scroll to the bottom for the starting point
 export const mongooseSchemaConverter = ({ schema: { tree } }) => {
   if (!tree || Object !== tree.constructor) {
     return console.error('Please provide a valid mongoose Model'); // eslint-disable-line no-console
@@ -598,6 +599,7 @@ export const mongooseSchemaConverter = ({ schema: { tree } }) => {
   }
   // don't change the original object
   const copyTree = cloneDeep(tree);
+  // starting point
   recurse(copyTree);
   return copyTree;
 };
