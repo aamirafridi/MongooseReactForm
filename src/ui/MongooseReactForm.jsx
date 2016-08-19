@@ -37,7 +37,7 @@ export class MongooseReactForm extends Component {
             errors.push(validators.required.replace(/{VALUE}/g, value));
           }
           if (value.trim().length !== 0 && this.type === 'number' && isNaN(Number(value))) {
-            errors.push('Please providate a numeric value');
+            errors.push('Please provide a numeric value');
           }
         }
         // If not required, than validate only if user provides data
